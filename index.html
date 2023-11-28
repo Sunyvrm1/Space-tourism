@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Space tourism website</title>
+
+</head>
+<body>
+
+<!-- header starts -->
+
+<header>
+  <div class="navCont">
+    <div class="logo">
+      <img src="/assets/shared/logo.svg" alt="">
+    </div>
+    <div class="navigation navText">
+      <nav>
+        <ul>
+          <li><a href="#home">00 Home</a></li>
+          <li><a href="#destination">01 Destination</a></li>
+          <li><a href="">02 Crew</a></li>
+          <li><a href="">03 Technology</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- header ends -->
+
+<!-- home start -->
+
+<div class="homeWrapper" id="home">
+  <div class="homeCont width80">
+    <div class="homeCont1">
+      <p class="heading5">
+        So, you want to travel to
+      </p>
+      <p class="heading1">Space</p>
+      <p class="para">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+    </div>
+    <div class="homeCont2">
+      <div class="exploreCont">
+        <p class="heading4">
+          EXPLORE
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- home ends -->
+
+<!-- destination start -->
+
+<div class="destiWrapper" id="destination">
+  <div class="destiCont width80">
+    <div class="destiCont1">
+      <div class="destHeading">
+        <p class="heading5"><span>01</span> PICK YOUR DESTINATION</p>
+      </div>
+      <div class="destImage">
+        <img src="./assets/destination/image-moon.png" alt="" id="destinationImage">
+      </div>
+    </div>
+    <div class="destiCont2">
+      <div class="destiButton">
+        <button class="desti navText" onclick="openTab('Moon')">moon</button>
+        <button class="desti navText" onclick="openTab('Mars')">mars</button>
+        <button class="desti navText" onclick="openTab('Europa')">europa</button>
+        <button class="desti navText" onclick="openTab('Titan')">titan</button>
+      </div>
+      <div class="destiHeading">
+        <p class="heading2" id="destinationName">moon</p>
+      </div>
+      <div class="destiPara">
+        <p class="para" id="destinationDescription">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+      </div>
+      <hr class="destiLine">
+      <div class="destiDT">
+        <div class="destiDistCont">
+          <p class="subHeading2">
+            AVG. DISTANCE
+          </p>
+          <p class="destiDistance subHeading1" id="destinationDistance">
+            222 KM
+          </p>
+        </div>
+        <div class="destiTravelCont">
+          <p class="subHeading2">
+            Est. travel time
+          </p>
+          <p class="destiDistance subHeading1" id="destinationTravelTime">
+            3 days
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- destination ends -->
+
+
+  <script src="main.js"></script>
+
+</body>
+</html>
