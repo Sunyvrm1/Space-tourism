@@ -1,242 +1,245 @@
 /* --Global Settings */
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-:root{
-    --color1: #0b0d17;
-    --color2: #D0D6F9;
-    --color3: #fff;
-    --font1: 'Barlow', sans-serif;
-    --font2: 'Barlow Condensed', sans-serif;
-    --font3: 'Bellefair', serif;
+:root {
+  --color1: #0b0d17;
+  --color2: #d0d6f9;
+  --color3: #fff;
+  --font1: "Barlow", sans-serif;
+  --font2: "Barlow Condensed", sans-serif;
+  --font3: "Bellefair", serif;
 }
-.heading1{
-    font-size: 150px;
-    color: var(--color3);
-    font-family: var(--font3);
-    text-transform: uppercase;
+.heading1 {
+  font-size: 100px;
+  color: var(--color3);
+  font-family: var(--font3);
+  text-transform: uppercase;
 }
-.heading2{
-    font-size: 100px;
-    color: var(--color3);
-    font-family: var(--font3);
-    text-transform: uppercase;
+.heading2 {
+  font-size: 70px;
+  color: var(--color3);
+  font-family: var(--font3);
+  text-transform: uppercase;
 }
-.heading3{
-    font-size: 56px;
-    color: var(--color3);
-    font-family: var(--font3);
-    text-transform: uppercase;
+.heading3 {
+  font-size: 40px;
+  color: var(--color3);
+  font-family: var(--font3);
+  text-transform: uppercase;
 }
-.heading4{
-    font-size: 32px;
-    color: var(--color3);
-    font-family: var(--font3);
-    text-transform: uppercase;
+.heading4 {
+  font-size: 30px;
+  color: var(--color3);
+  font-family: var(--font3);
+  text-transform: uppercase;
 }
-.heading5{
-    font-size: 28px;
-    color: var(--color2);
-    font-family: var(--font2);
-    text-transform: uppercase;
-    letter-spacing: 4.72px;
+.heading5 {
+  font-size: 25px;
+  color: var(--color2);
+  font-family: var(--font2);
+  text-transform: uppercase;
+  letter-spacing: 4.72px;
 }
-.subHeading1{
-    font-size: 28px;
-    color: var(--color3);
-    font-family: var(--font3);
-    text-transform: uppercase;  
+.subHeading1 {
+  font-size: 28px;
+  color: var(--color3);
+  font-family: var(--font3);
+  text-transform: uppercase;
 }
-.subHeading2{
-    font-size: 14px;
-    color: var(--color3);
-    font-family: var(--font2);
-    text-transform: uppercase;  
-    letter-spacing: 2.35px;
+.subHeading2 {
+  font-size: 14px;
+  color: var(--color3);
+  font-family: var(--font2);
+  text-transform: uppercase;
+  letter-spacing: 2.35px;
 }
-.navText{
-    font-size: 16px;
-    color: var(--color3);
-    font-family: var(--font2);
-    text-transform: uppercase;  
-    letter-spacing: 2.7px;
+.navText {
+  font-size: 16px;
+  color: var(--color3);
+  font-family: var(--font2);
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
 }
-.para{
-    color: var(--color2);
-    font-size: 18px;
-    font-family: var(--font1);
-    line-height: 32px;
+.para {
+  color: var(--color2);
+  font-size: 16px;
+  font-family: var(--font1);
+  line-height: 32px;
 }
-.width80{
-    width: 80%;
-    margin: 0 auto;
+.width80 {
+  width: 80%;
+  margin: 0 auto;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 /* --home css */
 
-.navCont{
-    display: grid;
-    grid-template-columns: 4fr 6fr;
-    position: fixed;
-    width: 100%;
-    top: 5%
+.navCont {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  position: fixed;
+  width: 100%;
+  top: 5%;
 }
-.logo{
-    display: flex;
-    align-items: center;
-    margin-left: 7%;
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 7%;
 }
-.navigation{
-    backdrop-filter: blur(81.55px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.navigation {
+  backdrop-filter: blur(81.55px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-nav ul{
-    display: flex;
-    gap: 30px;
+nav ul {
+  display: flex;
+  gap: 30px;
 }
-nav ul li{
-    list-style: none;
-    list-style: none;
-    padding: 30px 0;
-    border-bottom: 2px solid var(--color3);
+nav ul li {
+  list-style: none;
+  list-style: none;
+  padding: 30px 0;
+  border-bottom: 2px solid var(--color3);
 }
-nav ul li a{
-    text-decoration: none;
-    color: #fff;
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
 }
-.navigation::before{
-    content: "";
-    position: absolute;
-    width: 32vw;
-    background-color: var(--color3);
-    opacity: 0.4;
-    height: 0.5px;
-    top: 50%;
-    left: -50%;
+.navigation::before {
+  content: "";
+  position: absolute;
+  width: 32vw;
+  background-color: var(--color3);
+  opacity: 0.4;
+  height: 0.5px;
+  top: 50%;
+  left: -50%;
 }
-.homeWrapper{
-    width: 100%;
-    height: 100vh;
-    background-image: url(/assets/home/background-home-desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.homeWrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/home/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.homeCont{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 90vh;
-    align-items: end;
+.homeCont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90vh;
+  align-items: end;
 }
-.homeCont1 .para{
-    width: 80%;
+.homeCont1 .heading5 {
+  margin-bottom: 20px;
 }
-.homeCont2{
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
+.homeCont1 .para {
+  width: 85%;
 }
-.exploreCont{
-    width: 250px;
-    height: 250px;
-    background-color: var(--color3);
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-   transition: all 0.2s ease-in; 
-   cursor: pointer;
+.homeCont2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
 }
-.exploreCont:hover{
-    box-shadow: 0 0 0 3rem hsla(0,0%,100%,.1);
+.exploreCont {
+  width: 250px;
+  height: 250px;
+  background-color: var(--color3);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
 }
-.exploreCont p{
-    color: var(--color1);
+.exploreCont:hover {
+  box-shadow: 0 0 0 3rem hsla(0, 0%, 100%, 0.1);
+}
+.exploreCont p {
+  color: var(--color1);
 }
 
 /* --destination */
 
-.destiWrapper{
-    width: 100%;
-    height: 100vh;
-    background-image: url(/assets/destination/background-destination-desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.destiWrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/destination/background-destination-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.destiCont{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 90vh;
-    align-items: end;
+.destiCont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90vh;
+  align-items: end;
 }
-.destiCont1{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10%;
-    align-items: center;
-    justify-content: flex-end;
+.destiCont1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  align-items: start;
+  justify-content: flex-end;
 }
-.destiCont1 img{
-    width: 90%;
+.destiCont1 img {
+  width: 70%;
 }
-.destHeading span{
-    font-weight: 700;
-    color: #ffffff50;
+.destHeading span {
+  font-weight: 700;
+  color: #ffffff50;
 }
-.destImage{
-    display: flex;
-    justify-content: center;
+.destImage {
+  display: flex;
+  justify-content: center;
 }
-.destiButton{
-    display: flex;
-    gap: 20px;
-    margin-bottom: 30px;
+.destiButton {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
 }
-.destiButton button{
-    background: none;
-    outline: none;
-    border: none;
-    border-bottom: 2px solid transparent;
-    padding: 10px 0;
-    cursor: pointer;
+.desti {
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 10px 0;
+  cursor: pointer;
 }
-.destiButton button:hover{
-    padding: 8px 0;
-    border-bottom: 2px solid #fff;
+.desti:hover {
+  padding: 8px 0;
+  border-bottom: 2px solid #fff;
 }
-.destiCont2{
-    padding:0 5em;
+.destiCont2 {
+  padding: 0 3em;
 }
-.destiLine{
-    margin: 30px 0;
-    color: #ffffff40;
-    background-color: aqua;
+.destiLine {
+  margin: 30px 0;
+  color: #ffffff40;
+  background-color: aqua;
 }
-.destiDT{
-    display: flex;
-    justify-content: space-between;
+.destiDT {
+  display: flex;
+  justify-content: space-between;
 }
-.destiDistCont{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.destiDistCont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.destiTravelCont{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.destiTravelCont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.desti .active {
-    border-bottom: 2px solid white;
-  }
+.selected {
+  border-bottom: 2px solid white;
+}
