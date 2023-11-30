@@ -71,7 +71,7 @@
   color: var(--color2);
   font-size: 16px;
   font-family: var(--font1);
-  line-height: 32px;
+  line-height: 32fpx;
 }
 .width80 {
   width: 80%;
@@ -213,9 +213,11 @@ nav ul li a {
   border-bottom: 2px solid transparent;
   padding: 10px 0;
   cursor: pointer;
+  color: var(--color2);
 }
 .desti:hover {
   padding: 8px 0;
+  color: var(--color3);
   border-bottom: 2px solid #fff;
 }
 .destiCont2 {
@@ -241,5 +243,6 @@ nav ul li a {
   gap: 10px;
 }
 .selected {
+  color: var(--color3);
   border-bottom: 2px solid white;
 }

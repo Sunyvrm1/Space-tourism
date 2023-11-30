@@ -1,19 +1,17 @@
-const btns1 = document.querySelectorAll(".desti");
-btns1[0].classList.add("selected");
+// add or remove border from buttons
+
+const btns = document.querySelectorAll(".desti");
+btns[0].classList.add("selected");
+btns.forEach((button) => {
+  button.addEventListener("click", () => {
+    btns.forEach((btn) => btn.classList.remove("selected"));
+    button.classList.add("selected");
+  });
+});
+
+// change content from buttons
 
 function openTab(destinationName) {
-  const btns = document.querySelectorAll(".desti");
-
-  btns.forEach((button) => {
-    button.addEventListener("click", () => {
-      // Remove the 'selected' class from all buttons
-      btns.forEach((btn) => btn.classList.remove("selected"));
-
-      // Add 'selected' class to the clicked button
-      button.classList.add("selected");
-    });
-  });
-
   fetch("data.json")
     .then((response) => response.json())
     .then((destinationsData) => {
@@ -36,49 +34,3 @@ function openTab(destinationName) {
       console.error("Error fetching data:", error);
     });
 }
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const buttons = document.querySelectorAll(".desti");
-//   const destinationName = document.getElementById("destinationName");
-//   const destinationImage = document.getElementById("destinationImage");
-//   const destinationDescription = document.getElementById(
-//     "destinationDescription"
-//   );
-//   const destinationDistance = document.getElementById("destinationDistance");
-//   const destinationTravelTime = document.getElementById(
-//     "destinationTravelTime"
-//   );
-
-//   buttons.forEach((button) => {
-//     button.addEventListener("click", () => {
-//       // Remove active class from all buttons
-//       buttons.forEach((btn) => btn.classList.remove("active"));
-//       // Add active class to the clicked button
-//       button.classList.add("active");
-
-//       const destination = button.getAttribute("data-destination");
-
-//       // Fetch JSON data and update HTML elements based on the selected destination
-//       fetch("your_json_file.json")
-//         .then((response) => response.json())
-//         .then((data) => {
-//           const destinations = data.destinations;
-//           const selectedDestination = destinations.find(
-//             (dest) => dest.name === destination
-//           );
-//           if (selectedDestination) {
-//             // Update HTML content with the selected destination information
-//             destinationName.textContent = selectedDestination.name;
-//             destinationImage.src = selectedDestination.images.png;
-//             destinationDescription.textContent =
-//               selectedDestination.description;
-//             destinationDistance.textContent = selectedDestination.distance;
-//             destinationTravelTime.textContent = selectedDestination.travel;
-//           }
-//         })
-//         .catch((error) => {
-//           console.error("Error fetching data:", error);
-//         });
-//     });
-//   });
-// });
