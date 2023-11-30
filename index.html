@@ -25,7 +25,7 @@
             <ul>
               <li><a href="#home">00 Home</a></li>
               <li><a href="#destination">01 Destination</a></li>
-              <li><a href="">02 Crew</a></li>
+              <li><a href="#crew">02 Crew</a></li>
               <li><a href="">03 Technology</a></li>
             </ul>
           </nav>
@@ -65,7 +65,9 @@
       <div class="destiCont width80">
         <div class="destiCont1">
           <div class="destHeading">
-            <p class="heading5"><span>01</span> PICK YOUR DESTINATION</p>
+            <p class="heading5 destHead">
+              <span>01</span> PICK YOUR DESTINATION
+            </p>
           </div>
           <div class="destImage">
             <img
@@ -104,13 +106,13 @@
           <hr class="destiLine" />
           <div class="destiDT">
             <div class="destiDistCont">
-              <p class="subHeading2">AVG. DISTANCE</p>
+              <p class="subHeading2 avgEst">AVG. DISTANCE</p>
               <p class="destiDistance subHeading1" id="destinationDistance">
                 384,400 KM
               </p>
             </div>
             <div class="destiTravelCont">
-              <p class="subHeading2">Est. travel time</p>
+              <p class="subHeading2 avgEst">Est. travel time</p>
               <p class="destiDistance subHeading1" id="destinationTravelTime">
                 3 days
               </p>
@@ -121,6 +123,54 @@
     </div>
 
     <!-- destination ends -->
+
+    <div class="crewWrapper" id="crew">
+      <div class="crewCont width80">
+        <div class="crewCont1">
+          <div class="crewHeading">
+            <p class="heading5 destHead"><span>02</span> MEET YOUR CREW</p>
+          </div>
+          <div class="crewText">
+            <p class="heading4" id="crewRole">COMMander</p>
+            <p class="heading3" id="crewName">Douglas Hurley</p>
+            <p class="para" id="crewBio">
+              Douglas Gerald Hurley is an American engineer, former Marine Corps
+              pilot and former NASA astronaut. He launched into space for the
+              third time as commander of Crew Dragon Demo-2.
+            </p>
+          </div>
+          <div class="crewButton">
+            <button
+              class="crewBtn"
+              onclick="openCrew('Douglas Hurley')"
+            ></button>
+            <button
+              class="crewBtn"
+              onclick="openCrew('Mark Shuttleworth')"
+            ></button>
+            <button
+              class="crewBtn"
+              onclick="openCrew('Victor Glover')"
+            ></button>
+            <button
+              class="crewBtn"
+              onclick="openCrew('Anousheh Ansari')"
+            ></button>
+          </div>
+        </div>
+        <div class="crewCont2">
+          <img
+            src="/assets/crew/image-douglas-hurley.png"
+            id="crewImage"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- crew starts -->
+
+    <!-- crew ends -->
 
     <script src="main.js"></script>
   </body>

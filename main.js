@@ -34,3 +34,22 @@ function openTab(destinationName) {
       console.error("Error fetching data:", error);
     });
 }
+
+// change content from buttons
+
+function openCrew(crewName) {
+  fetch("data.json")
+    .then((response) => response.json())
+    .then((crewsData) => {
+      const crew1 = crewsData.crew.find((crew2) => crew2.name === crewName);
+      if (crew1) {
+        document.getElementById("crewName").innerText = crew1.name;
+        document.getElementById("crewImage").src = crew1.images.png; // or webp
+        document.getElementById("crewBio").innerText = crew1.bio;
+        document.getElementById("crewRole").innerText = crew1.role;
+      }
+    })
+    .catch((error) => {
+      console.error("Error fetching data:", error);
+    });
+}
