@@ -35,6 +35,17 @@ function openTab(destinationName) {
     });
 }
 
+// add or remove border from buttons
+
+const btns1 = document.querySelectorAll(".crewBtn");
+btns1[0].classList.add("selected1");
+btns1.forEach((button) => {
+  button.addEventListener("click", () => {
+    btns1.forEach((btn) => btn.classList.remove("selected1"));
+    button.classList.add("selected1");
+  });
+});
+
 // change content from buttons
 
 function openCrew(crewName) {
