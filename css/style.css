@@ -173,6 +173,9 @@ nav ul li a {
 .active {
   border-bottom: 2px solid var(--color3);
 }
+.sticky {
+  border: none;
+}
 /* --destination */
 
 .destiWrapper {

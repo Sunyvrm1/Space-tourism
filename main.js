@@ -96,6 +96,30 @@ function opentech(techName) {
 
 //naviagtion
 
+// window.addEventListener("scroll", function () {
+//   var links = document.querySelectorAll("nav ul li");
+//   var destination1 = document.getElementById("destination");
+//   var home = document.getElementById("home");
+
+//   links.forEach(function (link) {
+//     var sectionId = link.querySelector("a").getAttribute("href").substring(1);
+//     var section = document.getElementById(sectionId);
+//     var sectionTop = section.getBoundingClientRect().top;
+//     console.log(sectionId);
+//     var viewportHeight =
+//       window.innerHeight || document.documentElement.clientHeight;
+
+//     if (sectionTop < 0.5 * viewportHeight) {
+//       links.forEach(function (link) {
+//         if (link !== link.parentNode.parentNode.querySelector(".active")) {
+//           link.classList.remove("active");
+//         }
+//       });
+//       link.classList.add("active");
+//     }
+//   });
+// });
+
 window.addEventListener("scroll", function () {
   var links = document.querySelectorAll("nav ul li");
 
@@ -115,4 +139,14 @@ window.addEventListener("scroll", function () {
       link.classList.add("active");
     }
   });
+});
+
+window.addEventListener("scroll", function () {
+  let scrollValue = window.scrollY;
+  let suny = document.querySelector(".suny");
+  if (scrollValue > 300) {
+    suny.classList.remove("active");
+  } else {
+    suny.classList.add("active");
+  }
 });
