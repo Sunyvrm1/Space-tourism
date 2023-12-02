@@ -417,8 +417,11 @@ nav ul li a {
   }
   .homeCont1 .para {
     width: 100%;
-  } 
-   .homeCont2 {
+  }
+  .homeCont2 {
     justify-content: center;
+  }
+  .apporv {
+    width: 100%;
   }
 }
