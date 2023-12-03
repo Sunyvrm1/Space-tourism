@@ -1,3 +1,12 @@
+// navigation
+
+const navIcon = document.querySelector(".navIcon");
+const navCont = document.querySelector(".navCont");
+
+navIcon.addEventListener("click", () => {
+  navCont.classList.toggle("active");
+});
+
 // add or remove border from buttons (Destination)
 
 const btns = document.querySelectorAll(".desti");
