@@ -708,6 +708,7 @@ nav ul li a {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     align-items: end;
+    gap: 3em;
   }
   .techCont2 img {
     width: 60%;
@@ -730,7 +731,7 @@ nav ul li a {
   .techWrap {
     grid-template-rows: 1fr 2fr;
     row-gap: 3em;
-    height: 92vh;
+    height: 100vh;
   }
   .techCont1 {
     justify-content: flex-end;
