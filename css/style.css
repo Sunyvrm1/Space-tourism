@@ -591,6 +591,7 @@ nav ul li a {
   }
   .navigation::before {
     width: 0;
+    height: 0;
   }
   nav ul {
     margin-top: 40%;
@@ -741,6 +742,7 @@ nav ul li a {
   }
   .destiWrapper {
     background-image: url(/assets/destination/background-destination-mobile.jpg);
+    height: 100vh;
   }
 }
 
